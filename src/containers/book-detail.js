@@ -5,7 +5,10 @@ import { activeBook } from '../actions/index';
 class BookDetail extends Component {
     render() {
         return (
-            <div>Book Detail!</div>
+            <div>
+                <h3>Details for:</h3>
+                <div>{this.state.book.title}</div>
+            </div>
         );
     }
 }
