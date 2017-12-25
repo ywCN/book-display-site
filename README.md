@@ -30,6 +30,7 @@
 
 
 ## Container
+- Whenever we forge a connection between a component and redux, this connection turns that component into a container. aka `smart component`.
 - a `container` is a React component that has a direct connection to the state managed by Redux.
 - a `container` can inject state of `component` into application state with the help of `React-Redux` library
   - `React-Redux` is a bridge between `React` and `Redux`
