@@ -15,6 +15,9 @@
       - The value of reducer is assigned to the key.
     - `ActiveBook Reducer` can **produce** the `activeBook key`'s value.
       - The value of reducer is assigned to the key.
+- To Create A Reducer In An Application
+  1. Create the reducer
+  2. Wire the reducer into the application
 
 
 
