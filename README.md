@@ -6,7 +6,12 @@
 ```
 
 ## Reducer:
-- Reducer is a function that returns a piece of the application state.
-- Since an application can have different piece of states in the application state, we can have different reducers.
+- Reducer is a function that returns a piece of the `application state`.
+- Since an application can have different piece of states in the `application state`, we can have different reducers.
+  - `application state` is a plain JavaScript Object.
+  - normally a reducer can **produce** part of an object, 
+    - for example, `{book: {title: a}, activeBook: {title: a}}`
+    - `Book Reducer` can **produce** `book key`'s value, and the `ActiveBook Reducer` can **produce** the `activeBook key`'s value.
+
 
 
