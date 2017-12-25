@@ -19,5 +19,7 @@
   1. Create the reducer
   2. Wire the reducer into the application
 
+## combineReducers
+- A mapping of state and reducer.
 
 
