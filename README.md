@@ -51,4 +51,5 @@
   - a `component` can also be call a `view`
   - this `component` is promoted as a `container`
 - Only the most parent component that uses a particular piece of state needs to be connected to redux. like LCA.
-
+- **Whenever state changes, the container/component will automatically re-rendered.**
+- **Whenever state changes, the new state will be automatically assigned to props of the container/component.**
