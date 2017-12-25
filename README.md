@@ -57,9 +57,15 @@
 
 ## What happens after user clicks a button in Redux context
 1. user triggers an event, for example, click a button
-2. event listener will call `action creator`
-3. `action creator` returns an action as object
-4. this object is sent to all reducers automatically
-5. reducers will choose the type in the object and return corresponding output
-6. this output will be assigned to the corresponding piece of the application state 
+2. event listener will call an `action creator`
+3. `action creator` is a function that returns an object called `action`
+  - the object has a type that describes the type of `action` that was just triggered
+  - the object can also have some data that can further describes the `action`
+4. this object is sent to all `reducers` automatically
+5. `reducers` will choose the corresponding `reducer` depends on the type in the object and return corresponding `state`
+  - switch statement will determine the type of action
+  - `reducders` do not have to respond an action, which is done by using the `default` in switch statement and returns the original `state`
+6. this `state` will be assigned to the corresponding piece of the **newly assembled application state**
 7. since the state is changed, the corresponding components/views will be re-rendered automatically
+8. finished re-rendering, the application will wait for user to trigger another event
+9. another event is triggerred, go back to step1
