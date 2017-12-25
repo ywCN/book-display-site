@@ -62,6 +62,7 @@
   3. `action creator` is a function that returns an object called `action`
     - the object has a type that describes the type of `action` that was just triggered
     - the object can also have some data that can further describes the `action`
+    - `action creator` function must wire up to redux to make sure it will send `action` to `reducers`
   4. this object is sent to all `reducers` automatically
   5. `reducers` will choose the corresponding `reducer` depends on the type in the object and return corresponding `state`
     - switch statement will determine the type of action
@@ -78,4 +79,3 @@
 
 
 
-  
