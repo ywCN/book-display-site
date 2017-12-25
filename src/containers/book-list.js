@@ -13,7 +13,7 @@ class BookList extends Component {
     }
 
     render() {
-        console.log(miemiemie);
+        // console.log(this.props.miemiemie); // ->123
         return (
             <ul className="list-group col-sm-4">
                 {this.renderList()}
@@ -24,6 +24,6 @@ class BookList extends Component {
 
 function mapStateToProps(state) {
     return {
-        miemiemie: 123
+        // miemiemie: 123
     };
 }
