@@ -21,8 +21,9 @@
 
 ## `combineReducers` function
 - `import { combineReducers } from 'redux';`
-  - const rootReducer = combineReducers({});
+- `const rootReducer = combineReducers({books: BooksReducer});`
   - accepts an object
+  - This reducer is going to add a key to our global application state called books where the key is `books`, and the value is whatever gets returned from `BooksReducer`.
 - A mapping(object) of state and reducer.
   - key is the name of piece of the state
   - value is the reducer itself
@@ -53,3 +54,12 @@
 - Only the most parent component that uses a particular piece of state needs to be connected to redux. like LCA.
 - **Whenever state changes, the container/component will automatically re-rendered.**
 - **Whenever state changes, the new state will be automatically assigned to props of the container/component.**
+
+## What happens after user clicks a button in Redux context
+1. user triggers an event, for example, click a button
+2. event listener will call `action creator`
+3. `action creator` returns an action as object
+4. this object is sent to all reducers automatically
+5. reducers will choose the type in the object and return corresponding output
+6. this output will be assigned to the corresponding piece of the application state 
+7. since the state is changed, the corresponding components/views will be re-rendered automatically
