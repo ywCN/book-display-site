@@ -31,6 +31,7 @@
 ## `mapStateToProps` function
 - `mapStateToProps(state)`
 - The purpose of this function is to take our application state as an argument and whatever gets returned from here will show up as props inside the `container`.
+- returns an object and whatever object is returned will be available to this component as props. 
 
 ## `connect` function
 - `connect` takes a function and a component and produces a container
@@ -42,6 +43,7 @@
 ## Container
 - Whenever we forge a connection between a component and redux, this connection turns that component into a container. aka `smart component`.
 - a `container` is a React component that has a direct connection to the state managed by Redux.
+- a `container` is aware of the state that is contained by redux.
 - a `container` can inject state of `component` into application state with the help of `React-Redux` library
   - `React-Redux` is a bridge between `React` and `Redux`
 - a `component` can be defined as a `container` instead of a `component`
