@@ -31,7 +31,8 @@
 
 ## Container
 - a `container` is a React component that has a direct connection to the state managed by Redux.
-- a `container` can inject state of `component` into application state
+- a `container` can inject state of `component` into application state with the help of `React-Redux` library
+  - `React-Redux` is a bridge between React and Redux
 - a `component` can be defined as a `container` instead of a `component`
   - a `component` can also be call a `view`
   - this `component` is promoted as a `container`
