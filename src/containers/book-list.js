@@ -25,5 +25,11 @@ class BookList extends Component {
 function mapStateToProps(state) {
     return {
         // miemiemie: 123
+
+        // this.props.books
+        books: state.books
     };
 }
+
+// export the container, not BookList
+export default connect(mapStateToProps)(BookList);
