@@ -4,7 +4,7 @@ import { activeBook } from '../actions/index';
 
 class BookDetail extends Component {
     render() {
-        if (!this.props.book) {
+        if (!this.props.book) { //return early to aviod null.title
             return <div>Please select a book.</div>;
         }
         return (

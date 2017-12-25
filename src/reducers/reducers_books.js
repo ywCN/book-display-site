@@ -1,8 +1,8 @@
 export default function() {
     return [
-        {title: 'a'},
-        {title: 'b'},
-        {title: 'c'},
-        {title: 'd'}
+        {title: 'book a'},
+        {title: 'book b'},
+        {title: 'book c'},
+        {title: 'book d'}
     ];
 }
