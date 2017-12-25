@@ -29,3 +29,10 @@
 - When we pass the object to combineReducers, we are essentially telling Redux how to create `application state`.
 
 
+## Container
+- a `container` is a React component that has a direct connection to the state managed by Redux.
+- a `container` can inject state of `component` into application state
+- a `component` can be defined as a `container` instead of a `component`
+  - a `component` can also be call a `view`
+  - this `component` is promoted as a `container`
+
