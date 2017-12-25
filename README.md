@@ -56,16 +56,26 @@
 - **Whenever state changes, the new state will be automatically assigned to props of the container/component.**
 
 ## What happens after user clicks a button in Redux context
-1. user triggers an event, for example, click a button
-2. event listener will call an `action creator`
-3. `action creator` is a function that returns an object called `action`
-  - the object has a type that describes the type of `action` that was just triggered
-  - the object can also have some data that can further describes the `action`
-4. this object is sent to all `reducers` automatically
-5. `reducers` will choose the corresponding `reducer` depends on the type in the object and return corresponding `state`
-  - switch statement will determine the type of action
-  - `reducders` do not have to respond an action, which is done by using the `default` in switch statement and returns the original `state`
-6. this `state` will be assigned to the corresponding piece of the **newly assembled application state**
-7. since the state is changed, the corresponding components/views will be re-rendered automatically
-8. finished re-rendering, the application will wait for user to trigger another event
-9. another event is triggerred, go back to step1
+- Loop
+  1. user triggers an event, for example, click a button
+  2. event listener will call an `action creator`
+  3. `action creator` is a function that returns an object called `action`
+    - the object has a type that describes the type of `action` that was just triggered
+    - the object can also have some data that can further describes the `action`
+  4. this object is sent to all `reducers` automatically
+  5. `reducers` will choose the corresponding `reducer` depends on the type in the object and return corresponding `state`
+    - switch statement will determine the type of action
+    - `reducders` do not have to respond an action, which is done by using the `default` in switch statement and returns the original `state`
+  6. this `state` will be assigned to the corresponding piece of the **newly assembled application state**
+  7. since the state is changed, the corresponding components/views will be re-rendered automatically
+  8. finished re-rendering, the application will wait for user to trigger another event
+  9. another event is triggerred, go back to step1
+- Summary: 
+  - An action creator is just a function that returns an action.
+  - An action is just an object that flows through all of our different reducers.
+  - Reducers can then use that action to produce a different value(state) for tis particular piece of state.
+
+
+
+
+  
