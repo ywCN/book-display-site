@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+// bindActionCreator is a function that can make sure that
+// the action is created by the action creator actually ends up
+// flowing through all the different reducers
+import { bindActionCreators } from 'redux'; 
+// produced value by action creators will be 
+// distrubuted to reducers by bindActionCreator
+import { selectBook } from '../actions/index'; 
 
 class BookList extends Component {
     renderList() {
@@ -31,5 +38,9 @@ function mapStateToProps(state) {
     };
 }
 
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({ selectBook: selectBook }, dispatch);
+}
+
 // export the container, not BookList
-export default connect(mapStateToProps)(BookList);
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
