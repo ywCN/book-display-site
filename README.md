@@ -76,6 +76,11 @@
   - An action is just an object that flows through all of our different reducers.
   - Reducers can then use that action to produce a different value(state) for tis particular piece of state.
 
+## Action
+- Actions usually have 2 values.
+  - `type`: describes the purpose of the action
+  - `payload`: describe or clarifies the conditions of the action that is being triggered.
+
 
 
 
