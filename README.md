@@ -28,6 +28,10 @@
   - value is the reducer itself
 - When we pass the object to combineReducers, we are essentially telling Redux how to create `application state`.
 
+## mapStateToProps function
+- `mapStateToProps(state)`
+- The purpose of this function is to take our application state as an argument and whatever gets returned from here will show up as props inside the `container`.
+
 
 ## Container
 - Whenever we forge a connection between a component and redux, this connection turns that component into a container. aka `smart component`.
