@@ -1,8 +1,8 @@
 export default function() {
     return [
-        {title: 'book a', page: 110 },
-        {title: 'book b', page: 121 },
-        {title: 'book c', page: 312 },
-        {title: 'book d', page: 222 }
+        {title: 'book a', pages: 110 },
+        {title: 'book b', pages: 121 },
+        {title: 'book c', pages: 312 },
+        {title: 'book d', pages: 222 }
     ];
 }
