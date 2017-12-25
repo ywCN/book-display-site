@@ -30,6 +30,7 @@
 
 ## `mapStateToProps` function
 - `mapStateToProps(state)`
+- **The glue between React and Redux.**
 - The purpose of this function is to take our application state as an argument and whatever gets returned from here will show up as props inside the `container`.
 - returns an object and whatever object is returned will be available to this component as props. 
 
