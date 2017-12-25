@@ -19,7 +19,7 @@
   1. Create the reducer
   2. Wire the reducer into the application
 
-## combineReducers function
+## `combineReducers` function
 - `import { combineReducers } from 'redux';`
   - const rootReducer = combineReducers({});
   - accepts an object
@@ -28,9 +28,15 @@
   - value is the reducer itself
 - When we pass the object to combineReducers, we are essentially telling Redux how to create `application state`.
 
-## mapStateToProps function
+## `mapStateToProps` function
 - `mapStateToProps(state)`
 - The purpose of this function is to take our application state as an argument and whatever gets returned from here will show up as props inside the `container`.
+
+## `connect` function
+- `connect` takes a function and a component and produces a container
+  - `connect(mapStateToProps)(BookList)`
+    - firstly, `connect` take `mapStateToProps` as argument and returns a function
+    - then, the `returned function` will take `BookList` as argument and returns a `container`
 
 
 ## Container
