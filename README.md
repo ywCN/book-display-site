@@ -19,7 +19,13 @@
   1. Create the reducer
   2. Wire the reducer into the application
 
-## combineReducers
-- A mapping of state and reducer.
+## combineReducers function
+- `import { combineReducers } from 'redux';`
+  - const rootReducer = combineReducers({});
+  - accepts an object
+- A mapping(object) of state and reducer.
+  - key is the name of piece of the state
+  - value is the reducer itself
+- When we pass the object to combineReducers, we are essentially telling Redux how to create `application state`.
 
 
