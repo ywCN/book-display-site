@@ -18,6 +18,9 @@
 - To Create A Reducer In An Application
   1. Create the reducer
   2. Wire the reducer into the application
+- All reducers have **2** arguments.
+  1. The current state
+  2. The action
 
 ## `combineReducers` function
 - `import { combineReducers } from 'redux';`
