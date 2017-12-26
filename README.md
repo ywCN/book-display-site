@@ -1,3 +1,4 @@
+# User can select a book and the website will display detailed book information.
 ```
 > git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
 > cd ReduxSimpleStarter
