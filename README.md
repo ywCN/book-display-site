@@ -16,8 +16,8 @@ User can select a book and the website will display detailed book information.
 ## Tech Stack:
 - Node.js
 - React
-- ReactDOM
-- React-Redux
+  - React-DOM
+  - React-Redux
 - Redux
 - Babel
 - Webpack
