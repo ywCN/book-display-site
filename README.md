@@ -14,6 +14,7 @@ User can select a book and the website will display detailed book information.
 - User taps a book and the website shows the detailed information about the book.
 
 ## Tech Stack:
+- Node.js
 - React
 - ReactDOM
 - React-Redux
